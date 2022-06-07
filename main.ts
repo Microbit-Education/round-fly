@@ -1,0 +1,13 @@
+input.onButtonPressed(Button.A, function () {
+    basic.pause(2000)
+    Drones.Basic_action(Drones.Basicoptions.Takeoff)
+    Drones.Move_action(Drones.Directionoptions.Forward, 100)
+    Drones.Basic_action(Drones.Basicoptions.Landing)
+    basic.pause(2000)
+    Drones.Basic_action(Drones.Basicoptions.Takeoff)
+    Drones.Rotation_action(Drones.Angleoptions.Left, 180)
+    Drones.Move_action(Drones.Directionoptions.Forward, 100)
+    Drones.Rotation_action(Drones.Angleoptions.Right, 180)
+    Drones.Basic_action(Drones.Basicoptions.Landing)
+})
+Drones.initModule(Drones.Runmodes.Master)
