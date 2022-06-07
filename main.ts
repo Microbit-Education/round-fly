@@ -11,3 +11,4 @@ input.onButtonPressed(Button.A, function () {
     Drones.Basic_action(Drones.Basicoptions.Landing)
 })
 Drones.initModule(Drones.Runmodes.Master)
+basic.showIcon(IconNames.Heart)
